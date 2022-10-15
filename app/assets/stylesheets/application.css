@@ -13,3 +13,110 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&family=Roboto+Slab:wght@400;600;700;900&display=swap');
+
+body {
+  font-family: 'Roboto Slab', serif;
+  font-size: 16;
+  color: #293241;
+  text-align: center;
+}
+ ul {
+  list-style: none
+ }
+ h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+ }
+ a {
+  color: #293241;
+  text-decoration: none;
+ }
+ a:hover {
+  color: #ee6c4d;
+ }
+ .my-tasks {
+  width: 300px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #3d5a80;
+  color: #e0fbfc;
+  padding: 30px;
+  text-align: left;
+  border-radius: 8px;
+  box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.2);
+ }
+ .my-tasks h1 {
+  text-align: center;
+ }
+ .my-tasks a {
+  color: #e0fbfc;
+ }
+ .my-tasks a:hover {
+  color: #ee6c4d;
+ }
+ .details-card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+.task-details {
+  width: 300px;
+  background-color: #3d5a80;
+  color: #e0fbfc;
+  padding: 30px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.2);
+}
+.add-task-button {
+  color: #293241;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 20px;
+}
+.add-task-button:hover {
+  color: #ee6c4d;
+}
+.form {
+  width: 400px;
+  margin: auto;
+}
+label {
+  display: block;
+  text-align: center;
+  padding: 10px 10px 5px 10px;
+}
+input {
+  width: 100%;
+  padding: 5px;
+}
+input:focus {
+  outline: 2px solid #ee6c4d;
+}
+.submit-button {
+  width: 100px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  color: #e0fbfc;
+  border: none;
+  background-color: #3d5a80;
+  border-radius: 4px;
+  padding: 8px;
+}
+.submit-button:hover {
+  background-color: #ee6c4d;
+  cursor: pointer;
+}
+.submit-button:focus {
+  outline: none;
+}
+.new-task h1 {
+  color: #ee6c4d;
+}

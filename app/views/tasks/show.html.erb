@@ -1,0 +1,15 @@
+<div class="details-card">
+  <h1>TASK DETAILS</h1>
+
+  <div class="task-details">
+    <p><%= @task.details %></p>
+  </div>
+
+  <p>mark task as completed</p>
+
+  <%= link_to "back to list", root_path %>
+  <%= link_to "edit task", edit_task_path(@task) %>
+  <%= link_to "delete this task",
+  task_path(@task),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %>
+</div>
